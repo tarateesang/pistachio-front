@@ -7,18 +7,18 @@ var app = angular.module('pistachio', ['ngRoute']);
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
     //route for the home page
-        .when('/home', {
-            templateUrl: 'header.html',
+        .when('/giza', {
+            templateUrl: 'pages/giza.html',
             controller: 'mainController',
             title: 'Giza.'
         })
         // route for the about page
-        .when('/about', {
-            templateUrl: 'header2.html',
+        .when('/china', {
+            templateUrl: 'pages/china.html',
             controller: 'mainController',
             title: 'China'
         }).otherwise({
-            redirectTo: '/home'
+            redirectTo: '/giza'
         })
 }]);
 //mainController holds the icons and links of outsourced projects

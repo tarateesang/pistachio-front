@@ -15,7 +15,6 @@
 	vertical-align: middle;
     /*max-width:1140px;*/
     /*background:yellow;*/
-
 }
 
 .logo img {
@@ -28,4 +27,23 @@
     margin-left: 8.33%;
     margin-right:8.33%;
     /*background:blue;*/
+}
+
+
+/* ================================
+SCHEDULE PAGE
+================================ */
+
+
+.schedule-container {
+    height:300px;
+    border:1px solid var(--darkgrey);
+    margin-top:50px;
+    background:white;
+}
+
+.schedule-header {
+    height:75px;
+    background:rgba(245, 245, 245,0.3);
+    border-bottom:1px solid var(--darkgrey);
 }
