@@ -1,0 +1,42 @@
+<html ng-app="pistachio">
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>
+        </title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styling.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div ng-controller="mainController">
+            <div class="header-container">
+                <!-- <div class="parent-container"> -->
+                <div class="logo">
+                    <img class="img-responsive" src="assets/pistachio.png">
+                    </img>
+                </div>
+                <!-- </div> -->
+            </div>
+            <ul>
+                <li>
+                    <a href="#home">
+                        Giza
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        China
+                    </a>
+                </li>
+            </ul>
+            <div ng-view="">
+                <!-- load page templates-->
+            </div>
+        </div>
+        <script src="js/angular.min.js">
+        </script>
+        <script src="js/angular-route.js">
+        </script>
+        <script src="js/pistachio.js">
+        </script>
+    </body>
+</html>
