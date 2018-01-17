@@ -16,8 +16,9 @@ html {
 }
 
 body {
-		padding:0;
+	padding:0;
 	margin:0;
+    width:inherit;
 }
 
 .img-responsive {
@@ -35,20 +36,59 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 
-.sub-title {
+.sub-title, .sub-title a {
 	color:var(--darkgrey);
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	margin-bottom:-5px;
+    text-decoration:none;
+    -webkit-transition: all 0.25s ease;
+}
+
+.sub-title a:hover, .sub-title a:active {
+    color:#666;
+    -webkit-transition: all 0.25s ease;
 }
 
 .main-title {
 	letter-spacing:0.5px;
 	text-transform:uppercase;
 }
-/* ============================
-	Define grid
-============================ */
+
+
+/* ==========================
+Define grid */
+
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+html {
+    overflow-x:hidden !important;
+}
+
+
+/* ==================================
+Defining grid
+=================================== */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 .parent-container {
     /*background-color: pink;*/
@@ -58,7 +98,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     /* does this need to be used? */
     padding-left: 20px;
     padding-right: 20px;
-    /*overflow:hidden;*/
 }
 
 .row:before, .row:after {
@@ -66,6 +105,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: table;
     clear: both;
 }
+
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     /*original padding: 10px */
@@ -187,8 +227,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     float: left;
 }
 
-
-
 /* ==================================
 Responsive design - defining breakpoints
 =================================== */
@@ -230,6 +268,11 @@ Responsive design - defining breakpoints
     .offset-1, .offset-2, .offset-3, .offset-4, .offset-41, .offset-5, .offset-6, .offset-7, .offset-8, .offset-9, .offset-10, .offset-11, .offset-12 {
         margin-left: 0;
     }
+    
+    body {
+        font-size: 12px;
+    }
+ 
 }
 
 @media only screen and (max-width: 540px) and (min-width: 320px) {
@@ -273,20 +316,21 @@ Responsive design - defining breakpoints
         margin-left: 0;
     }
 
-}
+  
+}   
 
 @media only screen and (max-width: 690px) and (min-width: 541px) {
     body {
         font-size: 14px;
     }
     .col-1 {
-        width: 50%;
+        width: 33.333%;
     }
     .col-2 {
-        width: 50%;
+        width: 33.333%;
     }
     .col-3 {
-        width: 50%;
+        width: 33.333%;
     }
     .col-4 {
         width: 100%;
@@ -324,14 +368,15 @@ Responsive design - defining breakpoints
     .offset-10, .offset-11, .offset-12 {
         margin-left: 65%;
     }
+
 }
 
 @media only screen and (max-width: 768px) and (min-width: 690px) {
     .col-1 {
-        width: 33.33%;
+        width: 33.333%;
     }
     .col-2 {
-        width: 50%;
+        width: 33.333%;
     }
     .col-3 {
         width: 50%;
@@ -346,16 +391,19 @@ Responsive design - defining breakpoints
         width: 100%;
     }
     .col-7 {
-        width: 100%;
+        width: 66.6667%;
     }
     .col-8 {
+        width: 83.333%;
+    }
+    .col-8.hovering {
         width: 100%;
     }
     .col-9 {
-        width: 100%;
+        width: 83.333%;
     }
     .col-10 {
-        width: 100%;
+        width: 83.333%;
     }
     .col-11 {
         width: 100%;
@@ -372,21 +420,43 @@ Responsive design - defining breakpoints
     .offset-10, .offset-11, .offset-12 {
         margin-left: 65%;
     }
-    
+
+
 }
 
 @media only screen and (max-width: 810px) and (min-width: 768px) {
-    
+    body {
+        /*    background-color: purple;
+    color: yellow;*/
+        /*font-size: 12px;*/
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 810px) {
-   
+    body {
+        /*    background-color: green;
+    color: blue;*/
+        /*font-size: 12px;*/
+    }
+    .col-4 {
+        width: 33.333%;
+    }
 }
 
 @media only screen and (max-width: 970px) and (min-width: 900px) {
-    
+    body {
+        /*    background-color: green;
+    color: blue;*/
+        /*font-size: 12px;*/
+    }
 }
 
 @media only screen and (min-width: 970px) {
-    
+    body {
+        /*background-color: beige;*/
+    }
 }
