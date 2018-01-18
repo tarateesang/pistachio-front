@@ -12,7 +12,8 @@
 html {
 	background: var(--silver);
 
-	overflow-y:hidden;
+	/*overflow-y:hidden;*/
+    overflow-x:hidden;
 }
 
 body {
