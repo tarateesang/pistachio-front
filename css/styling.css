@@ -50,18 +50,41 @@ button:focus {outline:0;}
     margin-right:auto;
 }
 
+.title-separator {
+    margin-bottom:25px !important;
+}
+
 .travel-tile {
-    background:blue;
-    height:150px;
-    border-radius:10px;
-    padding:30px;
+    background:pink;
+    max-height:250px;
+    border-radius:10px !important;
+    /*padding:30px;*/
+    display:table;
     /*margin-right:30px;*/
 }
+
+.travel-tile-container {
+    padding-top:45px;
+    padding-bottom:30px;
+    display:table-cell;
+    vertical-align: middle;
+    padding-left:30px;
+    padding-right:30px;
+    /*background:pink;*/
+}
+
+.travel-tile-margin {
+    margin-right:15px;
+    margin-bottom:20px;
+}
+
 
 .travel-tile .travel-location {
     text-transform:uppercase;
     color:white;
     letter-spacing:1px;
+    /*background:orange;*/
+    height:60px;
 }
 
 .travel-tile hr {
@@ -73,6 +96,33 @@ button:focus {outline:0;}
     color:white;
 }
 
+.macau-container {
+    background:url(../img/macau.jpg);
+    background-position:center;
+    border-radius:10px !important;
+}
+
+.ubud-container {
+    background:url(../img/indonesia.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    /*background-position:;*/
+    border-radius:10px !important;
+
+}
+
+.tokyo-container {
+    background:url(../img/tokyo.jpeg);
+    background-position:center;
+    border-radius:10px !important;
+}
+
+.dark-overlay {
+    background:rgba(0,0,0,0.5);
+    height:inherit;
+    border-radius:10px;
+    width:inherit;
+}
 
 /* ================================
 SCHEDULE PAGE

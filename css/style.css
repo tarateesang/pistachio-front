@@ -109,8 +109,8 @@ body {
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     /*original padding: 10px */
-    padding-right: 15px;
-    padding-left: 15px;
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
     float: left;
     /*border: 1px solid black;*/
 }
@@ -128,7 +128,7 @@ body {
 }
 
 .col-4 {
-    width: 33.3333%;
+    width: calc(33.3333% - 10px);
 }
 
 .col-5 {
@@ -431,32 +431,15 @@ Responsive design - defining breakpoints
         /*font-size: 12px;*/
     }
 
-    .col-4 {
-        width: 33.33%;
+    .travel-tile-margin {
+        margin-right:10px;
     }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 810px) {
+@media only screen (min-width: 811px) {
     body {
         /*    background-color: green;
     color: blue;*/
         /*font-size: 12px;*/
-    }
-    .col-4 {
-        width: 33.333%;
-    }
-}
-
-@media only screen and (max-width: 970px) and (min-width: 900px) {
-    body {
-        /*    background-color: green;
-    color: blue;*/
-        /*font-size: 12px;*/
-    }
-}
-
-@media only screen and (min-width: 970px) {
-    body {
-        /*background-color: beige;*/
     }
 }
