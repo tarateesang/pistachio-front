@@ -32,7 +32,7 @@
 
 .green-button {
     background:var(--green);
-    padding:0px 20px;
+    padding:5px 20px;
     margin-top:5px;
     width:inherit;
     text-transform:uppercase;
@@ -41,17 +41,31 @@
     border-radius:5px;
 }
 
+button h3 {
+    font-size:1.3em;
+}
+
 button:focus {outline:0;}
 
 .title-divider {
-    margin-bottom:-50px;
-    width:70%;
-    margin-left:auto;
-    margin-right:auto;
+    /*margin-bottom:-50px;*/
+    width:80%;
+    float:left;
+    margin-left:3%;
+    margin-top:33px;
+}
+
+.title-divider1 {
+    /*margin-bottom:-50px;*/
+    width:84%;
+    float:left;
+    margin-left:20px;
+    margin-top:33px;
 }
 
 .title-separator {
     margin-bottom:25px !important;
+    opacity:0.4;
 }
 
 .travel-tile {
