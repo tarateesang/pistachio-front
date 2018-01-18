@@ -66,6 +66,7 @@ button:focus {outline:0;}
 .title-separator {
     margin-bottom:25px !important;
     opacity:0.4;
+    clear:both;
 }
 
 .travel-tile {
@@ -113,8 +114,9 @@ button:focus {outline:0;}
 }
 
 .travel-tile .travel-duration {
-    font-weight:300;
+    font-weight:400;
     color:white;
+    float:right;
 }
 
 .macau-container {
