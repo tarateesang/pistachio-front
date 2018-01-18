@@ -116,6 +116,9 @@ button:focus {outline:0;}
 .travel-tile .travel-duration {
     font-weight:400;
     color:white;
+}
+
+.travel-tile .travel-count {
     float:right;
 }
 
