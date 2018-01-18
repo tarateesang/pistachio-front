@@ -71,6 +71,8 @@ button:focus {outline:0;}
     vertical-align: middle;
     padding-left:30px;
     padding-right:30px;
+    margin-left:auto;
+    margin-right:auto;
     /*width:100% !important;*/
     /*background:pink;*/
 }
@@ -88,7 +90,7 @@ button:focus {outline:0;}
     letter-spacing:1px;
     /*background:orange;*/
     height:60px;
-    min-width:330px;
+    /*min-width:330px;*/
     /*max-width:500px;*/
 }
 
@@ -103,30 +105,26 @@ button:focus {outline:0;}
 
 .macau-container {
     background:url(../img/macau.jpg);
+    background-image: linear-gradient(to bottom, rgba(90,90,90,0.5) 0%,rgba(90,90,90,0.4) 100%), url(../img/macau.jpg);
     background-position:center;
-    border-radius:10px !important;
+    border-radius:5px !important;
 }
 
 .ubud-container {
     background:url(../img/indonesia.jpg);
+    background-image: linear-gradient(to bottom, rgba(90,90,90,0.5) 0%,rgba(90,90,90,0.4) 100%), url(../img/indonesia.jpg);
     background-position: center;
     background-repeat:no-repeat;
     /*background-position:;*/
-    border-radius:10px !important;
+    border-radius:5px !important;
 
 }
 
 .tokyo-container {
     background:url(../img/tokyo.jpeg);
+    background-image: linear-gradient(to bottom, rgba(90,90,90,0.5) 0%,rgba(90,90,90,0.4) 100%), url(../img/tokyo.jpeg);
     background-position:center;
-    border-radius:10px !important;
-}
-
-.dark-overlay {
-    background:rgba(0,0,0,0.5);
-    height:inherit;
-    border-radius:10px;
-    width:100%;
+    border-radius:5px !important;
 }
 
 /* ================================
