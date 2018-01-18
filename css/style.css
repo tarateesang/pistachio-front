@@ -6,6 +6,7 @@
     --silver: rgb(245, 245, 245);
     --darkgrey: #CCC;
     --green: #92D234;
+    --darkgreen:#68AF02;
     --gold:#F5A623;
 }
 
@@ -243,6 +244,9 @@ Responsive design - defining breakpoints
     .col-3 {
         width: 100%;
     }
+    .row {
+        margin-bottom:20px;
+    }
     .col-4 {
         width: 100%;
     }
@@ -290,6 +294,9 @@ Responsive design - defining breakpoints
     .col-3 {
         width: 100%;
     }
+    .row {
+        margin-bottom:20px;
+    }
     .col-4 {
         width: 100%;
     }
@@ -334,9 +341,13 @@ Responsive design - defining breakpoints
     .col-3 {
         width: 33.333%;
     }
+    .row {
+        margin-bottom:20px;
+    }
     .col-4 {
         width: 100%;
     }
+
     .col-5 {
         width: 100%;
     }
@@ -382,6 +393,9 @@ Responsive design - defining breakpoints
     }
     .col-3 {
         width: 50%;
+    }
+    .row {
+        margin-bottom:20px;
     }
     .col-4 {
         width: 100%;
