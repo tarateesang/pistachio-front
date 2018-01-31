@@ -26,10 +26,10 @@ app.config(['$routeProvider', function($routeProvider) {
             title: 'Giza.'
         })
         // route for the about page
-        .when('/china', {
-            templateUrl: 'pages/china.html',
+        .when('/login', {
+            templateUrl: 'pages/login.html',
             controller: 'mainController',
-            title: 'China'
+            title: 'Login'
         }).otherwise({
             redirectTo: '/home'
         })
