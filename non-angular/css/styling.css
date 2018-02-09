@@ -170,19 +170,156 @@ button:focus {
     border-radius: 5px !important;
 }
 /* ================================
-SCHEDULE PAGE
+FRAMES FOR PAGES
 ================================ */
 
-.schedule-container {
-    height: 300px;
+.box-container {
+    height: 600px;
     border: 1px solid var(--darkgrey);
     margin-top: 50px;
     background: white;
 }
-.schedule-header {
+
+.left-box {
+    float:left;
+    width:35%;
+    padding:0;
+    /*border: 1px solid var(--darkgrey);*/
+    background:var(--darkgrey);
+    height:100%;
+}
+.box-header {
     height: 75px;
-    background: rgba(245, 245, 245, 0.3);
+    /*background: rgba(245, 245, 245, 0.95);*/
+    background:rgba(255,255,255,0.95);
     border-bottom: 1px solid var(--darkgrey);
+    border-right:1px solid var(--darkgrey);
+    width:100.5%;
+    padding:0;
+    display:table;
+}
+
+.box-header h4 a {
+    letter-spacing:1px;
+    color:var(--darkergrey);
+    text-decoration:none;
+}
+
+.box-header h4 a:hover, .box-header h4 a:active {
+    cursor: pointer;
+    color: var(--green) !important;
+    -webkit-transition: all 0.25s ease;
+}
+
+.box-header ul {
+    before:none;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    padding:0;
+    /*margin-top:20px;*/
+    display:table-cell;
+    vertical-align: middle;
+    padding-top:20px;
+    width:100%;
+    /*background:blue;*/
+    text-align:center;
+    height:100%;
+}
+
+.box-header ul li {
+    display:inline;
+    /*padding:5px 40px;*/
+    text-transform:uppercase;
+    /*background:pink;*/
+    padding:0 60px;
+}
+
+.tile-selected {
+    /*background:var(--darkgrey);*/
+    background: rgba(245, 245, 245, 0.5);
+    height:150px;
+    width:100%;
+    border-bottom: 0.25px solid var(--darkgrey);
+    color:var(--darkwriting);
+}
+
+.tile {
+    background:var(--silver);
+    height:150px;
+    width:100%;
+    border-bottom: 0.25px solid var(--darkgrey);
+    color:var(--darkwriting);
+}
+
+.tile-img {
+    /*padding:22px;*/
+    margin:20px;
+    height:110px; 
+    background:pink; 
+    width:20%; 
+    float:left;
+}
+.tile-text {
+    padding-top:5px;
+    width:70%;
+    float:right;
+}
+
+.tile-text h4 {
+    text-transform: uppercase;
+    letter-spacing:0.5px;
+}
+
+.tile-text p {
+    font-size:0.9em;
+    font-style:italic;
+}
+
+.tile-text .tile-stars {
+    width:40%;
+    float:left;
+}
+.tile-text .tile-ratings {
+    margin-top:25px !important;
+}
+
+
+.right-box {
+    height:inherit;
+    width:65%;
+    background:white;
+    /*border: 1px solid var(--darkgrey);*/
+    border-left:1px solid var(--darkgrey);
+    border-top:1px solid var(--darkgrey);
+    border-bottom:1px solid var(--darkgrey);
+    float:right;
+    margin-top:-1px;
+    /*margin-right:-1px;*/
+    /*margin-left:-1px;*/
+    /*margin-top:-76px;  (negative margin + 1 for border) to take up header*/
+    z-index:1;
+}
+
+.attraction-container {
+    height:inherit;
+    /*background:blue;*/
+    top:0;
+    margin-left:5%;
+    margin-right:5%;
+    padding-top:15px;
+    color:var(--darkwriting);
+}
+
+.attraction-title {
+    letter-spacing:0.5px;
+}
+
+.attraction-container h4 {
+    margin-bottom:3px;
+}
+.attraction-container p {
+    font-size:0.9em;
 }
 /* ================================
 LOGIN PAGE
@@ -235,9 +372,30 @@ input, select, textarea {
     color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,0.10);
 }
 .green-button:active, .green-button:hover {
     cursor: pointer;
     background: var(--darkgreen) !important;
+    -webkit-transition: all 0.25s ease;
+}
+
+.gold-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom:15px;
+    padding: 0 20px;
+    border-radius: 2px;
+    background: var(--gold);
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,0.10);
+}
+.gold-button:active, .gold-button:hover {
+    cursor: pointer;
+    background: var(--darkgold) !important;
     -webkit-transition: all 0.25s ease;
 }
