@@ -39,11 +39,11 @@
             </h2>
             <!-- <hr class="title-divider"/> -->
             <div>
-                <button class="gold-button" style="float:right">
+                <a href="#openModal" style="float:right" style="text-decoration:none;" class="gold-button" style="float:right">
                     <h3>
                         Submit
                     </h3>
-                </button>
+                </a>
                 <hr>
                     <div class="box-container">
                         <div class="left-box">
@@ -192,4 +192,43 @@
             </div>
         </div>
     </body>
+    <div id="openModal" class="modalDialog modalSumitAtt" style="overflow:scroll;">
+        <div style="color: #404144;width: 500px; !important">	<a href="#close" title="Close" class="close">x</a>
+            <style>
+                p.SumitAttTxt{
+                    font-size: 13px;
+                    font-weight: normal;
+                    color: var(--darkergrey);
+                    text-align: center;
+                }
+                p.SumitAttDate{
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: var(--gold);
+                }
+                .modalSumitAtt > div {
+                    padding: 25px 55px 33px 55px;
+                }
+                hr.divider {
+                    margin-left: -55px;
+                    margin-right: -55px;
+                    border-color: var(--darkgrey);
+                    opacity:0.7;
+                    margin-top:25px;
+                    margin-bottom:25px;
+                }
+            </style>
+            <h2 style="margin-top:45px;text-align: center;font-size: 29px;">SUBMIT ATTRACTIONS</h2>
+            <p class="SumitAttTxt">Check back between:</p>
+            <p class="SumitAttDate">Jun 18 - Jun 25</p>
+            <p class="SumitAttTxt">to cast your final decision on your team's activities.</p>
+            <hr class="divider"/>
+            <p class="SumitAttTxt">Until then, feel free to come back and edit your choices (add anything you might've missed, remove anything you don't want anymore, etc.).</p>
+            <p class="SumitAttTxt">Check the progress bar on your dashboard to see where the team is.</p>
+            <div style="display: flex;position: absolute;top:390px;left:35%;">
+                <button type="submit"  style="text-decoration:none;border-color:var(--darkergrey);height:50px;width:150px;font-size: 16px;font-weight:bold;" class="green-button !important" style="float:right" style="text-align: center;">SUBMIT</button>
+            </div>
+        </div>
+    </div>
 </html>
