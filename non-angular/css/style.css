@@ -30,6 +30,7 @@ body {
 
 hr {
     clear:both;
+    border:0.5px solid var(--darkgrey);
 }
 
 .img-responsive {

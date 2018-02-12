@@ -69,7 +69,7 @@ button:focus {
 }
 .title-separator {
     margin-bottom: 25px !important;
-    opacity: 0.4;
+    opacity: 1;
     clear: both;
 }
 .travel-tile {
@@ -199,17 +199,17 @@ FRAMES FOR PAGES
     display:table;
 }
 
-.box-header h4 a {
+.box-header h4 {
     letter-spacing:1px;
     color:var(--darkergrey);
     text-decoration:none;
 }
 
-.box-header h4 a:hover, .box-header h4 a:active {
+/*.box-header h4 a:hover, .box-header h4 a:active {
     cursor: pointer;
     color: var(--green) !important;
     -webkit-transition: all 0.25s ease;
-}
+}*/
 
 .box-header ul {
     before:none;
@@ -232,9 +232,33 @@ FRAMES FOR PAGES
     /*padding:5px 40px;*/
     text-transform:uppercase;
     /*background:pink;*/
-    padding:0 60px;
+    padding:0 40px;
 }
 
+.bookmarked-trip {
+background:var(--green);
+height:15px;
+width:15px;
+border-radius:100px;
+z-index: 2;
+position:absolute;
+margin-left:380px;
+margin-top:20px;
+}
+
+
+
+.schedule-header {
+    width:100%;
+    border-right:0px;
+}
+
+.schedule-header ul {
+    /*background:blue;*/
+    text-align:left;
+    margin-left:0;
+    margin-right:100px;
+}
 .tile-selected {
     /*background:var(--darkgrey);*/
     background: rgba(245, 245, 245, 0.5);
@@ -321,6 +345,24 @@ FRAMES FOR PAGES
 .attraction-container p {
     font-size:0.9em;
 }
+
+/* ================================
+BUCKET PAGE
+================================ */
+.bucket {
+    margin-top:20px;
+    height:100px;
+    width:100%;
+    background:var(--silver);
+    border:1px dashed var(--darkgrey);
+}
+
+.bucket-subtitle {
+    color:var(--darkergrey);
+    margin-bottom:15px !important;
+}
+
+
 /* ================================
 LOGIN PAGE
 ================================ */
