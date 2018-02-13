@@ -259,6 +259,15 @@ margin-top:20px;
     margin-left:0;
     margin-right:100px;
 }
+
+.tile {
+    background:var(--silver);
+    height:150px;
+    width:100%;
+    border-bottom: 0.25px solid var(--darkgrey);
+    color:var(--darkwriting);
+}
+
 .tile-selected {
     /*background:var(--darkgrey);*/
     background: rgba(245, 245, 245, 0.5);
@@ -268,12 +277,20 @@ margin-top:20px;
     color:var(--darkwriting);
 }
 
-.tile {
+.tile button{
     background:var(--silver);
     height:150px;
     width:100%;
     border-bottom: 0.25px solid var(--darkgrey);
     color:var(--darkwriting);
+}
+
+.tile button:hover {
+    background-color: #ddd;
+}
+
+.tile button.active {
+    background-color: #fff;
 }
 
 .tile-img {
@@ -284,6 +301,7 @@ margin-top:20px;
     width:20%; 
     float:left;
 }
+
 .tile-text {
     padding-top:5px;
     width:70%;
@@ -325,7 +343,7 @@ margin-top:20px;
     z-index:1;
 }
 
-.attraction-container {
+.attraction {
     height:inherit;
     /*background:blue;*/
     top:0;
@@ -334,7 +352,6 @@ margin-top:20px;
     padding-top:15px;
     color:var(--darkwriting);
 }
-
 .attraction-title {
     letter-spacing:0.5px;
 }
