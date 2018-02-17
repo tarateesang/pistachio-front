@@ -40,7 +40,6 @@
                 TRIP TO GIZA
             </h2>
             <!-- <hr class="title-divider"/> -->
-            <div>
                 <button class="gold-button" style="float:right">
                     <h3>
                         Submit
@@ -57,18 +56,18 @@
                                                 Suggested
                                             <!-- </a> -->
                                         </li>
-                                       <!--  <li>
-                                            <a href="">
-                                                Your Picks
-                                            </a>
-                                        </li> -->
+                                         <li>
+                                            <!--<a href="">-->
+                                                <!--Your Picks-->
+                                            <!--</a>-->
+                                        </li>
                                     </h4>
                                 </ul>
                             </div>
                             <!-- tiles on the left side of the container -->
                     <div class="tile">
                     <button class="tablinks" onclick="openActivity(event, 'Sao Jorge Castle')" id="defaultOpen">
-                        <div class="bookmarked-trip"  style="display:none;"></div>
+                        <!-- <div class="bookmarked-trip"></div> -->
                         <div class="tile-img" style="">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/LisbonCastle.jpg/1200px-LisbonCastle.jpg" height="110px" width="100px">
                         </div>
@@ -138,7 +137,7 @@
                     </div>
                     <div class="tile">
                     <button class="tablinks" onclick=" openActivity(event, 'Belem Tower')" onclick="ShowDiv()">
-                        <div class="bookmarked-trip"  style="display:none;"></div>
+                        <div id="location_1" class="bookmarked-trip"  style="display:none;"></div>
                         <div class="tile-img" style="">
                             <img src="https://lh5.googleusercontent.com/-qx-R9z6LjV0/WLlj05nhmaI/AAAAAAAFLQY/ve0d2iPb6IYuOnWe7DyhQA5znpBfncBRQCLIBGAYYCw/w240-h160-k-no/" height="110px" width="100px">
                         </div>
@@ -279,14 +278,15 @@ document.getElementById("defaultOpen").click();
                         $(this).html('<h3>Remove</h3>');
                         $(this).removeClass('green-button');
                         $(this).addClass('grey-button');
+                        document.getElementById("location_1").setAttribute("style", "display:block;");
                     } else {
                         $(this).html('<h3>Add</h3>');
                         $(this).removeClass('grey-button');
                         $(this).addClass('green-button');
+                        document.getElementById("location_1").setAttribute("style", "display:none;")
                     }
                 });
 
             });
-
 </script>
 </html>
