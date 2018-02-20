@@ -305,7 +305,9 @@ margin-top:20px;
 .tile-text {
     padding-top:5px;
     width:70%;
-    float:right;
+    float:left;
+    text-align:left;
+    padding-left:10px;
 }
 
 .tile-text h4 {
