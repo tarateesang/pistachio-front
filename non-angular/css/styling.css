@@ -1,3 +1,7 @@
+.x-icon {
+    width:75%;
+}
+
 .header-container {
     height: 75px;
     background: white;
@@ -368,11 +372,13 @@ p.SubmitAttDate {
     color: var(--gold);
 }
 .modalSubmitAtt>div {
-    padding: 25px 55px 33px 55px;
+    padding: 25px 55px 33px 55px !important;
+    /*padding:100px !important;*/
 }
 hr.divider {
-    margin-left: -55px;
-    margin-right: -55px;
+    width:95%;
+/*    margin-left: -55px;
+    margin-right: -55px;*/
     border-color: var(--darkgrey);
     opacity: 0.7;
     margin-top: 25px;
@@ -384,6 +390,9 @@ hr.divider {
 .openModal div {
     color: #404144;
     width: 500px !important;
+    padding:100px;
+    margin-left:5%;
+    margin-right:5%;
 }
 /* ================================
 BUCKET PAGE
