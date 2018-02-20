@@ -6,10 +6,12 @@
         <link href="../css/style.css" rel="stylesheet" type="text/css"/>
         <!-- <link href="css/grid.css" rel="stylesheet" type="text/css"/> -->
         <link href="../css/styling.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="../js/fontawesome/fontawesome-all.js">
-        </script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+            </script>
+            <script src="../js/fontawesome/fontawesome-all.js">
+            </script>
+        </link>
     </head>
     <body>
         <!-- HEADER -->
@@ -40,38 +42,41 @@
                 TRIP TO GIZA
             </h2>
             <!-- <hr class="title-divider"/> -->
-                <button class="gold-button" style="float:right">
-                    <h3>
-                        Submit
-                    </h3>
-                </button>
-                <hr>
-                    <div class="box-container">
-                        <div class="left-box">
-                            <div class="box-header">
-                                <ul>
-                                    <h4>
-                                        <li>
-                                            <!-- <a href=""> -->
-                                                Suggested
-                                            <!-- </a> -->
-                                        </li>
-                                         <li>
-                                            <!--<a href="">-->
-                                                <!--Your Picks-->
-                                            <!--</a>-->
-                                        </li>
-                                    </h4>
-                                </ul>
-                            </div>
-                            <!-- tiles on the left side of the container -->
-                    <div class="tile">
-                    <button class="tablinks" onclick="openActivity(event, 'Sao Jorge Castle')" id="defaultOpen">
-                        <!-- <div class="bookmarked-trip"></div> -->
-                        <div class="tile-img" style="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/LisbonCastle.jpg/1200px-LisbonCastle.jpg" height="110px" width="100px">
+            <a class="gold-button" href="#openModal" style="float:right">
+                <!-- <button class="gold-button" style="float:right"> -->
+                <h3>
+                    Submit
+                </h3>
+                <!-- </button> -->
+            </a>
+            <hr>
+                <div class="box-container">
+                    <div class="left-box">
+                        <div class="box-header">
+                            <ul>
+                                <h4>
+                                    <li>
+                                        <!-- <a href=""> -->
+                                        Suggested
+                                        <!-- </a> -->
+                                    </li>
+                                    <li>
+                                        <!--<a href="">-->
+                                        <!--Your Picks-->
+                                        <!--</a>-->
+                                    </li>
+                                </h4>
+                            </ul>
                         </div>
-                        <div class="tile-text" style="">
+                        <!-- tiles on the left side of the container -->
+                        <div class="tile">
+                            <button class="tablinks" id="defaultOpen" onclick="openActivity(event, 'Sao Jorge Castle')">
+                                <!-- <div class="bookmarked-trip"></div> -->
+                                <div class="tile-img" style="">
+                                    <img height="110px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/LisbonCastle.jpg/1200px-LisbonCastle.jpg" width="100px">
+                                    </img>
+                                </div>
+                                <div class="tile-text" style="">
                                     <h4>
                                         Sao Jorge Castle
                                     </h4>
@@ -97,16 +102,18 @@
                                             </p>
                                         </div>
                                     </div>
+                                </div>
+                            </button>
                         </div>
-                    </button>
-                    </div>
-                    <div class="tile">
-                    <button class="tablinks" onclick="openActivity(event, 'Lisbon Oceanarium')">
-                        <div class="bookmarked-trip"  style="display:none;"></div>
-                        <div class="tile-img" style="">
-                            <img src="https://lisbon-portugal-guide.com/images/750/lisbon-oceanarium-sharks.jpg" height="110px" width="100px">
-                        </div>
-                        <div class="tile-text" style="">
+                        <div class="tile">
+                            <button class="tablinks" onclick="openActivity(event, 'Lisbon Oceanarium')">
+                                <div class="bookmarked-trip" style="display:none;">
+                                </div>
+                                <div class="tile-img" style="">
+                                    <img height="110px" src="https://lisbon-portugal-guide.com/images/750/lisbon-oceanarium-sharks.jpg" width="100px">
+                                    </img>
+                                </div>
+                                <div class="tile-text" style="">
                                     <h4>
                                         Lisbon Oceanarium
                                     </h4>
@@ -132,18 +139,20 @@
                                             </p>
                                         </div>
                                     </div>
+                                </div>
+                            </button>
                         </div>
-                    </button>
-                    </div>
-                    <div class="tile">
-                    <button class="tablinks" onclick=" openActivity(event, 'Belem Tower')" onclick="ShowDiv()">
-                        <div id="location_1" class="bookmarked-trip"  style="display:none;"></div>
-                        <div class="tile-img" style="">
-                            <img src="https://lh5.googleusercontent.com/-qx-R9z6LjV0/WLlj05nhmaI/AAAAAAAFLQY/ve0d2iPb6IYuOnWe7DyhQA5znpBfncBRQCLIBGAYYCw/w240-h160-k-no/" height="110px" width="100px">
-                        </div>
-                        <div class="tile-text" style="">
+                        <div class="tile">
+                            <button class="tablinks" onclick="ShowDiv()">
+                                <div class="bookmarked-trip" id="location_1" style="display:none;">
+                                </div>
+                                <div class="tile-img" style="">
+                                    <img height="110px" src="https://lh5.googleusercontent.com/-qx-R9z6LjV0/WLlj05nhmaI/AAAAAAAFLQY/ve0d2iPb6IYuOnWe7DyhQA5znpBfncBRQCLIBGAYYCw/w240-h160-k-no/" width="100px">
+                                    </img>
+                                </div>
+                                <div class="tile-text" style="">
                                     <h4>
-                                       Belem Tower
+                                        Belem Tower
                                     </h4>
                                     <p>
                                         Historic, Cultural
@@ -167,95 +176,150 @@
                                             </p>
                                         </div>
                                     </div>
-                        </div>
-                    </button>
-                    </div>
-                    </div>
-                        <div class="right-box">
-                            <div class="attraction" id = "Sao Jorge Castle">
-                                <!--title-->
-                                <h1 class="attraction-title" style="float:left">
-                                    Sao Jorge Castle
-                                </h1>
-                                <!-- for remove button, use grey-button class-->
-                                <button class="green-button" style="float:right">
-                                    <h3>
-                                        ADD
-                                    </h3>
-                                </button>
-                                <hr style="size:1px"/>
-                                <!-- content-->
-                                <div class="row">
-                                    <div class="col-7">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/LisbonCastle.jpg/1200px-LisbonCastle.jpg" width="200" height="100"></img>
-                                    </div>
-                                    <div class="col-5">
-                                        <h4>DETAILS</h4>
-                                        <p>Hours</p>
-                                        <p>Price</p>
-                                    </div>
                                 </div>
-                                <p>Sao Jorge Castle is a Moorish castle occupying a commanding hilltop overlooking the historic centre of the Portuguese city of Lisbon and Tagus River</p>
-                            </div>
-                            <div class="attraction" id = "Lisbon Oceanarium">
-                                <!--title-->
-                                <h1 class="attraction-title" style="float:left">
-                                    Lisbon Oceanarium
-                                </h1>
-                                <!-- for remove button, use grey-button class-->
-                                <button class="green-button" style="float:right">
-                                    <h3>
-                                        ADD
-                                    </h3>
-                                </button>
-                                <hr style="size:1px"/>
-                                <!-- content-->
-                                <div class="row">
-                                    <div class="col-7">
-                                        <img src="https://lisbon-portugal-guide.com/images/750/lisbon-oceanarium-sharks.jpg" width="200" height="100"></img>
-                                    </div>
-                                    <div class="col-5">
-                                        <h4>DETAILS</h4>
-                                        <p>Hours</p>
-                                        <p>Price</p>
-                                    </div>
-                                </div>
-                                <p>The Lisbon Oceanarium is an oceanarium in Lisbon, Portugal. It is located in the Parque das Nações, which was the exhibition grounds for the Expo '98. It is the largest indoor aquarium in Europe.</p>
-                            </div>
-                            <div class="attraction" id = "Belem Tower">
-                                <!--title-->
-                                <h1 class="attraction-title" style="float:left">
-                                    Belem Tower
-                                </h1>
-                                <!-- for remove button, use grey-button class-->
-                                <button class="green-button" style="float:right">
-                                    <h3>
-                                        ADD
-                                    </h3>
-                                </button>
-                                <hr style="size:1px"/>
-                                <!-- content-->
-                                <div class="row">
-                                    <div class="col-7">
-                                        <img src="https://lh5.googleusercontent.com/-qx-R9z6LjV0/WLlj05nhmaI/AAAAAAAFLQY/ve0d2iPb6IYuOnWe7DyhQA5znpBfncBRQCLIBGAYYCw/w240-h160-k-no/" width="200" height="100"></img>
-                                    </div>
-                                    <div class="col-5">
-                                        <h4>DETAILS</h4>
-                                        <p>Hours</p>
-                                        <p>Price</p>
-                                    </div>
-                                </div>
-                                <p>Belem Tower or the Tower of St Vincent is a fortified tower located in the civil parish of Santa Maria de Belém in the municipality of Lisbon, Portugal.</p>
-                            </div>
+                            </button>
                         </div>
                     </div>
-                    <!-- <hr/> -->
-                </hr>
-            </div>
+                    <div class="right-box">
+                        <div class="attraction" id="Sao Jorge Castle">
+                            <!--title-->
+                            <h1 class="attraction-title" style="float:left">
+                                Sao Jorge Castle
+                            </h1>
+                            <!-- for remove button, use grey-button class-->
+                            <button class="green-button" style="float:right">
+                                <h3>
+                                    ADD
+                                </h3>
+                            </button>
+                            <hr style="size:1px"/>
+                            <!-- content-->
+                            <div class="row">
+                                <div class="col-7">
+                                    <img height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/LisbonCastle.jpg/1200px-LisbonCastle.jpg" width="200"/>
+                                </div>
+                                <div class="col-5">
+                                    <h4>
+                                        DETAILS
+                                    </h4>
+                                    <p>
+                                        Hours
+                                    </p>
+                                    <p>
+                                        Price
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                Sao Jorge Castle is a Moorish castle occupying a commanding hilltop overlooking the historic centre of the Portuguese city of Lisbon and Tagus River
+                            </p>
+                        </div>
+                        <div class="attraction" id="Lisbon Oceanarium">
+                            <!--title-->
+                            <h1 class="attraction-title" style="float:left">
+                                Lisbon Oceanarium
+                            </h1>
+                            <!-- for remove button, use grey-button class-->
+                            <button class="green-button" style="float:right">
+                                <h3>
+                                    ADD
+                                </h3>
+                            </button>
+                            <hr style="size:1px"/>
+                            <!-- content-->
+                            <div class="row">
+                                <div class="col-7">
+                                    <img height="100" src="https://lisbon-portugal-guide.com/images/750/lisbon-oceanarium-sharks.jpg" width="200"/>
+                                </div>
+                                <div class="col-5">
+                                    <h4>
+                                        DETAILS
+                                    </h4>
+                                    <p>
+                                        Hours
+                                    </p>
+                                    <p>
+                                        Price
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                The Lisbon Oceanarium is an oceanarium in Lisbon, Portugal. It is located in the Parque das Nações, which was the exhibition grounds for the Expo '98. It is the largest indoor aquarium in Europe.
+                            </p>
+                        </div>
+                        <div class="attraction" id="Belem Tower">
+                            <!--title-->
+                            <h1 class="attraction-title" style="float:left">
+                                Belem Tower
+                            </h1>
+                            <!-- for remove button, use grey-button class-->
+                            <button class="green-button" style="float:right">
+                                <h3>
+                                    ADD
+                                </h3>
+                            </button>
+                            <hr style="size:1px"/>
+                            <!-- content-->
+                            <div class="row">
+                                <div class="col-7">
+                                    <img height="100" src="https://lh5.googleusercontent.com/-qx-R9z6LjV0/WLlj05nhmaI/AAAAAAAFLQY/ve0d2iPb6IYuOnWe7DyhQA5znpBfncBRQCLIBGAYYCw/w240-h160-k-no/" width="200"/>
+                                </div>
+                                <div class="col-5">
+                                    <h4>
+                                        DETAILS
+                                    </h4>
+                                    <p>
+                                        Hours
+                                    </p>
+                                    <p>
+                                        Price
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                Belem Tower or the Tower of St Vincent is a fortified tower located in the civil parish of Santa Maria de Belém in the municipality of Lisbon, Portugal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <hr/> -->
+            </hr>
         </div>
-    </body>
-<script>
-function openActivity(evt, activityName) {
+        <div class="modalDialog modalSubmitAtt" id="openModal">
+            <div>
+                <a class="close" href="#close" title="Close">
+                    x
+                </a>
+                <h2 style="margin-top:45px;text-align: center;font-size: 29px;">
+                    SUBMIT ATTRACTIONS
+                </h2>
+                <p class="SubmitAttTxt">
+                    Check back between:
+                </p>
+                <p class="SubmitAttDate">
+                    Jun 18 - Jun 25
+                </p>
+                <p class="SubmitAttTxt">
+                    to cast your final decision on your team's activities.
+                </p>
+                <hr class="divider"/>
+                <p class="SumitAttTxt">
+                    Until then, feel free to come back and edit your choices (add anything you might've missed, remove anything you don't want anymore, etc.).
+                </p>
+                <p class="SumitAttTxt">
+                    Check the progress bar on your dashboard to see where the team is.
+                </p>
+            </div>
+            <button class="green-button-submit" style="margin-top:-150px">
+                <h3>
+                    SUBMIT
+                </h3>
+            </button>
+            <!-- <div style="display: flex;position: absolute;top:390px;left:35%;">
+                <button type="submit"  style="text-decoration:none;border-color:var(--darkergrey);height:50px;width:150px;font-size: 16px;font-weight:bold;" class="green-button !important" style="float:right" style="text-align: center;">SUBMIT</button> -->
+        </div>
+        <script>
+            function openActivity(evt, activityName) {
     var i, attraction, tablinks;
     attraction = document.getElementsByClassName("attraction");
     for (i = 0; i < attraction.length; i++) {
@@ -288,5 +352,6 @@ document.getElementById("defaultOpen").click();
                 });
 
             });
-</script>
+        </script>
+    </body>
 </html>
