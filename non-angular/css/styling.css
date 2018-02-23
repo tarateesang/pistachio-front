@@ -1,6 +1,15 @@
 .x-icon {
     width:75%;
 }
+.x-icon-white {
+    /*width:10%;*/
+    /*width:50%;*/
+    height:50%;
+    margin-left:5px;
+    margin-right:0px;
+    margin-top:5px;
+    /*background:blue;*/
+}
 
 .header-container {
     height: 75px;
@@ -404,10 +413,34 @@ BUCKET PAGE
     width: 100%;
     background: var(--silver);
     border: 1px dashed var(--darkgrey);
+    clear:both;
 }
 .bucket-subtitle {
     color: var(--darkergrey);
     margin-bottom: 15px !important;
+    float:left;
+}
+.bucket-container {
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:27px;
+    margin-bottom:27px;
+}
+.bucket-hr {
+    float:right;
+    margin-top:-25px;
+}
+.drag-element {
+    background:var(--gold);
+    color:white;
+    height:27px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+    padding:2px 15px;
+    letter-spacing: 0.5px;
+    border-radius:20px;
+    display:inline-block;
 }
 /* ================================
 LOGIN PAGE
